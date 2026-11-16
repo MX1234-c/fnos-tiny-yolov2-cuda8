@@ -1,0 +1,56 @@
+{
+  "evidence_status": "VERIFIED",
+  "provenance": "Historical measurements recorded in README.md at commit 8ede3ce. Raw terminal logs were not archived.",
+  "environment": {
+    "system": "fnOS 1.2.1010",
+    "kernel": "6.18.18.c1186-trim",
+    "gpu": "NVIDIA GeForce GT 520M",
+    "gpu_architecture": "Fermi",
+    "compute_capability": "2.1",
+    "cuda_target": "sm_21",
+    "pci_id": "10de:1050",
+    "driver": "390.157",
+    "cuda": "8.0.61",
+    "cpu": "Intel Core i3-2350M",
+    "execution": "Docker, original offline-built NAS image"
+  },
+  "model": {
+    "name": "Darknet Tiny YOLOv2 COCO",
+    "input_resolution_px": [
+      416,
+      416
+    ],
+    "sample": "data/person.jpg"
+  },
+  "metric": {
+    "name": "single_image_inference_seconds",
+    "definition": "Darknet Predicted in duration. Excludes container startup, model loading, and video pipeline latency.",
+    "unit": "seconds"
+  },
+  "gpu": {
+    "run_count": 3,
+    "raw_seconds": [
+      0.282816,
+      0.299216,
+      0.525062
+    ],
+    "median_seconds": 0.299216
+  },
+  "cpu": {
+    "run_count": 3,
+    "raw_seconds": [
+      2.666583,
+      2.316063,
+      2.518239
+    ],
+    "median_seconds": 2.518239
+  },
+  "median_speedup_cpu_over_gpu": 8.416124137746644,
+  "untested": [
+    "camera stream",
+    "end-to-end latency",
+    "sustained stability",
+    "Snapdragon 410 comparison",
+    "other GPUs or kernel versions"
+  ]
+}

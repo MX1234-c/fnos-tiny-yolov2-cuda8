@@ -1,0 +1,5 @@
+**
+!Dockerfile
+!cuda/
+!cuda/probe.cu
+!cuda/packages.sha256
