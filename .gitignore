@@ -1,0 +1,11 @@
+*.weights
+*.run
+*.deb
+*.ko
+*.tar
+*.tar.gz
+/driver-libs/
+/raw390/
+/patches390/
+/predictions.png
+/core
